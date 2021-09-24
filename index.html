@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Code Cuz | Full Service Design and Development Agency</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta name="description" content="New York City Full Service Design and Software Development Agency">
+<meta name="viewport" content="width=device-width,  user-scalable=no">
+<link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+<link href="css/reset.min.css" rel="stylesheet" >	
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<link href="lib/animate/animate.min.css" rel="stylesheet">
+<link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+<link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">	
+<link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+	
+	
+	
+	
+	
+<script>
+  'use strict';
+  var pause = 10;
+  var speed = 5;
+  var texts = ['Graphics', 'Websites', 'Marketing', 'Videos', 'Animations', 'Branding', 'Coding', 'UI/UX', 'Design', 'Development', 'Apps', 'Strategy'  ];
+  (function () {
+    var text = texts[0];
+    var cur = 0,
+      dir = 1,
+      cur_text = 0;
+    var s = 0;
+    setInterval(function loop() {
+      cur += dir;
+      if (cur < 0) {
+        cur = 0;
+        dir = -dir;
+        cur_text = (++cur_text) % 6;
+        text = texts[cur_text];
+      }
+      if (cur > text.length) {
+        cur = text.length;
+        if (s++ > pause) {
+          s = 0
+          dir = -dir;
+        }
+      }
+      document.querySelector('#type').setAttribute('class', text.toLowerCase())
+      document.querySelector('#type').innerHTML = text.substring(0, cur);
+    }, 500 / speed)
+
+  })()
+</script>
+<script>
+  'use strict';
+  var pause = 10;
+  var speed = 5;
+ var texts = ['Graphics', 'Website', 'Marketing', 'Videos', 'Animations', 'Branding', 'Coding', 'UI/UX', 'Design', 'Development', 'Apps', 'Strategy'  ];
+  (function () {
+    var text = texts[0];
+    var cur = 0,
+      dir = 1,
+      cur_text = 0;
+    var s = 0;
+    setInterval(function loop() {
+      cur += dir;
+      if (cur < 0) {
+        cur = 0;
+        dir = -dir;
+        cur_text = (++cur_text) % 6;
+        text = texts[cur_text];
+      }
+      if (cur > text.length) {
+        cur = text.length;
+        if (s++ > pause) {
+          s = 0
+          dir = -dir;
+        }
+      }
+      document.querySelector('#typea').setAttribute('class', text.toLowerCase())
+      document.querySelector('#typea').innerHTML = text.substring(0, cur);
+    }, 500 / speed)
+  })()
+</script>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script>
+        $(function () {
+          $('.modal').on('hidden.bs.modal', function () {
+            $(this).find('video')[0].pause();
+          });
+        });
+ </script>
+<script> 
+ $(document).ready(function() {
+   if($(window).width() <= 767){
+document.getElementById("myVideo").remove();    
+   }
+});
+</script>
+
+</head>
+<body>
+<!--==========================
+    Header
+  ============================-->	
+<header id="header">
+  <div class="container-fluid">
+    <div id="logo" class="logoblock "> <a href="index.html"> <img src="img/logo.png" class="img-responsive" alt="" title="" /></a> </div>
+    <nav id="nav-menu-container">
+      <ul class="nav-menu">
+        <li class="active"><a class="activeblue" href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li ><a href="work.html">Work</a></li>
+        <li><a href="ourpackages.html">Packages</a></li>
+        <li><a href="calculator.html">Calculator</a></li>
+        <li><a href="contact.html">Contact </a></li>
+        <li><a href=""  data-toggle="modal" data-target="#joincodecuzhonors" class="joinbtn ">Join <span class="dnone-1200 show-767inline">CodeCuz Honors</span></a></li>
+        <li><a href="http://www.codefortheculture.com/" target="_blank" class="cftclogo" > <img src="img/cftc_logo.svg" class="img-responsive" alt="" title="" /> </a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!--==========================
+    Desktop Video Section
+  ============================-->
+<section id="home" class="desktopintrobg cd-section">
+  <div class="centerFront whitetext ">
+    <div>
+      <div class="hptextintro">
+        <h2 class="smallsize">We Drive Proven Results </h2>
+        <p class="hptextheading">We are a Full-Service Digital Agency specializing in </p>
+        <p id="type" style="display:inline;" class="analytics">Graphics</p>
+        <p class="hptextbody "> Code Cuz creates world-class digital products. We works with you from the beginning until you have a fully functional solution. <span class="texthideprojects1400videotext"> As a full-service design and development agency, we work closely with our clients to define, design, and develop transformative user experiences across all platforms and brand’s touch points. </span> <span class="texthideprojects1300videotext"> Our focus at Code Cuz is servicing businesses with innovative solutions to ensure the success of any project. </span> </p>
+        <p class="btnboxhpvideo text-left breakerpoint20 nav-menu" > <a class="btnboxhpvideobtnwhite slidewhite" href="#aboutall">Learn More </a> </p>
+        <div class="clearfix"></div>
+      </div>
+      <div class="playbtnbox">
+        <div class="pull-right text-right"> <a class="playbtn" href="#" data-toggle="modal" data-target="#video1"> <i class="fa fa-play"></i> </a> </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <div id="arrowbutton text-center"  >
+      <div class="arrowhparea " > <a href="#aboutall" class="arrowbtnlink" ><img src="img/arrow.svg" class="img-responsive arrowsvg"/></a> </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+  <video autoplay muted loop id="myVideo">
+    <source src="video/bg.mp4" type="video/mp4">
+  </video>
+</section>
+<!--==========================
+    Mobile Slider Section
+  ============================-->
+<section id="intro" class="mobileintrobg">
+  <div class="intro-container">
+    <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
+      <ol class="carousel-indicators">
+      </ol>
+      <div class="mobilehptextintro">
+        <h2 class="subtitletext">We Drive Proven Results</h2>
+        <div class="mobiletextboxarea">
+          <p class="hptextheading"> We are a Full-Service Digital Agency specializing in </p>
+          <p id="typea" style="display:inline;" class="analytics">Graphics</p>
+          <div class="clearfix"></div>
+        </div>
+        <p class="hptextbody text-center ">As a full-service design and development agency, we create world-class digital and print solutions.<!--<span class="texthide320videotext"> Our focus at Code Cuz is servicing businesses with innovative solutions to ensure the success of any project.</span>--> </p>
+        <div class="hptextbody mt-0 text-center "> 
+			<div class="mb-20">
+			<a href="" class="watchvideobutton" data-toggle="modal" data-target="#video1" >Watch Video</a>
+			</div>
+			<div>
+			<a href="" class="watchvideobutton" data-toggle="modal" data-target="#joincodecuzhonors" >Join CodeCuz Honors </a>
+			</div>
+        <div class="arrowdown text-center" >
+          <div class="homepagearrow" > <a href="#aboutall" class="arrowbtnlink" ><img src="img/arrow.svg" class="img-responsive arrowsvg"/></a> </div>
+        </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <div class="carousel-background"><img src="img/intro-carousel/1.jpg" alt=""></div>
+          <div class="carousel-container"> </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-background"><img src="img/intro-carousel/2.jpg" alt=""></div>
+          <div class="carousel-container"> </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-background"><img src="img/intro-carousel/3.jpg" alt=""></div>
+          <div class="carousel-container"> </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-background"><img src="img/intro-carousel/4.jpg" alt=""></div>
+          <div class="carousel-container"> </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-background"><img src="img/intro-carousel/5.jpg" alt=""></div>
+          <div class="carousel-container"> </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev"> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next"> <span class="sr-only">Next</span> </a> </div>
+  </div>
+</section>
+
+<!--==========================
+    Main Body Section
+  ============================-->
+
+<main id="main"> 
+  <!--==========================
+    About Section
+  ============================-->
+  <section id="aboutall">
+    <div class="sectionblockarea pb-0" >
+      <section class="cd-section">
+        <div class="container">
+          <header class="section-header">
+            <h3 class="font_black">About Us</h3>
+            <p class="headertext  headerblocktext pb-40 font_black">We merge imagination and technology to help build strategic and engaging experiences that reinforce credibility, communicate key messages and help brands grow in an age of digital transformation.</p>
+          </header>
+        </div>
+        <div class="homeprojectblock mainhpblock" >
+          <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 imgleft-nopad"> <a href=""  data-toggle="modal" data-target="#video1" > <img
+                src="img/thumbnail_video-18001650.jpg" class="img-responsive" alt="codecuz_video"> </a> </div>
+          <div class="col-lg-5 col-md-12 col-lg-offset-right-1 col-md-offset-right-0 pt-20-991 textblockpd">
+            <div >
+              <h4 class="hpsection sectionheading font_black lh-44" >Transforming <span class="font_blue">Brands</span><br>
+                through <span id="bluebg" class="whiteclr">Innovation</span></h4>
+              <hr class="abouthr" />
+              <div class="clearfix"></div>
+              <p > We are driven by our results. Our team creates powerful strategies that set the stage for your marketing initiatives for today and tomorrow. </p>
+              <p class="texthideprojects1300"> Whether you’re just starting out or evolving your brand, we offers the expertly crafted disruption that will take your company to the next level. </p>
+              <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+                <div class="textshowprojects">
+                  <div class="card-header" role="tab" id="headingThree6"> <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree6"
+                        aria-expanded="false" aria-controls="collapseThree6">
+                    <h7 class="mb-0 font_black">+ Read More </h7>
+                    </a> </div>
+                  <div id="collapseThree6" class="collapse" role="tabpanel" aria-labelledby="headingThree6"
+                      data-parent="#accordionEx">
+                    <div class="card-body plr-0" > A custom design and development project can cost anywhere from $3,000 to $50,000 so it can really be a challenge to nail down a specific professional cost especially if it is fully custom. That’s why we made a quote calculator that you can use to ballpark prices for the project you want created. Want a uniquely custom quote for your project? Give us a call today! </div>
+                  </div>
+                </div>
+              </div>
+              <p class="btnboxhpvideo breakerpoint40" > <a class="btnboxhpvideobtnblack slide" href="about.html">Learn More About Us </a> </p>
+            </div>
+          </div>
+          <div class="clearfix">&nbsp;</div>
+        </div>
+      </section>
+    </div>
+  </section>
+  <!-- End or About Section --> 
+  
+  <!--==========================
+      Work Section
+    ============================-->
+  <section id="usecases" >
+    <div class="sectionblockarea">
+      <section id="deals" class="cd-section">
+        <div class="homeprojectblock">
+          <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 imgleft-nopadding"><img  src="img/hp_tablet01.jpg" class="img-responsive"></div>
+          <div class="col-lg-5 col-md-12 col-lg-offset-right-1 col-md-offset-right-0 pt-20-991 textblockpd">
+            <div class=" whitecolor">
+              <h4 class="hpsection sectionheading  lh-44" >Solving <span >Problems,</span><br>
+                Producing <span id="whitebg" class="tealclr">Dreams</span></h4>
+              <hr class="abouthrwhite" />
+              <div class="clearfix"></div>
+              <p > Code Cuz leverages frontline technologies to produce custom design and development solutions that are tailored to the specific needs of our customers. </p>
+              <p class="texthideprojects1300"> With this being said here is a small snapshot of the work delivered by Code Cuz. The following projects leverage a full range of services we offer. </p>
+              <div class="accordion md-accordion" id="accordionEx1" role="tablist" aria-multiselectable="true">
+                <div class="textshowprojects">
+                  <div class="card-header" role="tab" id="headingThree61"> <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseThree61"
+                        aria-expanded="false" aria-controls="collapseThree6">
+                    <h7 class="mb-0">+ Read More </h7>
+                    </a> </div>
+                  <div id="collapseThree61" class="collapse" role="tabpanel" aria-labelledby="headingThree61"
+                      data-parent="#accordionEx1">
+                    <div class="card-body plr-0"> At Code Cuz we produce initiatives that include adapting to the latest advances in emerging technologies such as Mobile and Web Applications, Branding, Software Development, Websites, Videography, Social Media Marketing, and emerging technologies. </div>
+                  </div>
+                </div>
+              </div>
+              <div class="btnboxhpvideo breakerpoint40" >
+                <p> <a class="btnboxhpvideobtnwhite slidewhite" href="work.html">View Our Work </a></p>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix">&nbsp;</div>
+        </div>
+      </section>
+    </div>
+  </section>
+  <!-- End or Work Section --> 
+  <!--==========================
+      Calcukator Section
+    ============================-->
+  <section id="calculator" >
+    <div class="sectionblockarea">
+      <section id="projects" class="cd-section">
+        <div id="aboutme2" class="cd-section">
+          <div class="homeprojectblock">
+            <div class="col-lg-5 col-md-12 offset-1 offset-1 projectblockbottom textblockpd">
+              <div class="pb-20 whitecolor">
+                <h4 class="hpsection sectionheading  lh-44" >Design and <span >Development</span><br>
+                  Cost <span class="whitebg darkblueclr">Calculator</span></h4>
+                <hr class="abouthrwhite" />
+                <div class="clearfix"></div>
+                <p > Wondering how much your design our development solution is going to cost and want an estimate now? </p>
+                <p class="texthideprojects1300"> Well your in luck! We created a custom calculator to help you with this process.  This 100% free, no-obligation cost calculator is designed to provide you with that general range. </p>
+                <div class="accordion md-accordion" id="accordionEx2" role="tablist" aria-multiselectable="true">
+                  <div class="textshowprojects">
+                    <div class="card-header" role="tab" id="headingThree62"> <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx2" href="#collapseThree62"
+                        aria-expanded="false" aria-controls="collapseThree62">
+                      <h7 class="mb-0">+ Read More </h7>
+                      </a> </div>
+                    <div id="collapseThree62" class="collapse" role="tabpanel" aria-labelledby="headingThree62"
+                      data-parent="#accordionEx2">
+                      <div class="card-body plr-0"> In addition to Code Cuz building our intensive design and development solutions we also specialize in Branding, Marketing, and Videography services; all of which help us in delivering 
+                        wow and customer satisfaction </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="btnboxhpvideo breakerpoint40" >
+                  <p> <a class="btnboxhpvideobtnwhite slidewhite" href="calculator.html">Calculate Your Project </a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-xs-12 imgright-nopad"><img src="img/internal_tablet.jpg"
+                  class="img-responsive"></div>
+            <div class="clearfix">&nbsp;</div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+  <!-- End or Calculator Section --> 
+  
+  <!--==========================
+      Process Section
+    ============================-->
+  <section id="cost">
+    <div class="sectionblockarea">
+      <section id="recognitions" class="cd-section">
+        <div class="container">
+          <header class="section-header pbquestions">
+            <h3 class="font_black">Our Process</h3>
+            <div class="center-block">
+              <div class="headertext pageheadertext font_black col-md-12 center-block text-center"  >At Code Cuz we have developed a structured process that's proven to build a powerful brand presence and ensure clear and consistent communication with your audience.</div>
+              <div class="clearfix">&nbsp;</div>
+            </div>
+          </header>
+        </div>
+        <div class="container iconblock">
+          <div class=" text-center">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
+              <div class="col-xl-3 col-lg-4 col-md-5 col-sm-5 col-xs-8 iconblocktopareafoot"><img src="img/icon_discover.svg" class="img-responsive"/></div>
+              <h4 class="titleprocess font_bold"><a href="">Discover</a></h4>
+              <p class="col-lg-11 iconblockareabottom">Investigating your sector and researching your competitors, the discovery phase identifies opportunities and enables a compelling strategy.</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
+              <div class="col-xl-3 col-lg-4 col-md-5 col-sm-5 col-xs-8 iconblocktopareafoot"><img src="img/icon_design.svg" class="img-responsive"/></div>
+              <h4 class="titleprocess font_bold"><a href="">Design</a></h4>
+              <p class="col-lg-11 iconblockareabottom">Example page spreads and layouts are produced. Accompanying fonts and color palettes are defined. Branding and logo concepts are sketched.</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
+              <div class="col-xl-3 col-lg-4 col-md-5 col-sm-5 col-xs-8 iconblocktopareafoot"><img src="img/icon_development.svg" class="img-responsive"/></div>
+              <h4 class="titleprocess font_bold" ><a href="">Develop</a></h4>
+              <p class="col-lg-11 iconblockareabottom">During this phase, we’ll implement design, evaluate usability, refine, and make final adjustments. Your project is produced and ready to go. </p>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="text-center mt-40" > <a class="btnboxhpvideobtnblack slide" href="about.html">Learn More About Us </a>
+          <div class="clearfix"></div>
+        </div>
+      </section>
+    </div>
+  </section>
+  <!-- End or Process Section --> 
+<!-- Uncomment below i you want to use a preloader --> 
+<!--<div id="preloader"></div>-->  
+</main>
+<!-- End or Main Body Section --> 
+<!--==========================
+      Top Footer Section
+============================-->
+<section id="topofthefootersection"  class="cd-section section-bg ">
+  <div class="container">
+    <div class="section-header pb-40">
+      <h3>Lets Work Together</h3>
+    </div>
+    <div class="row contact-info ">
+      <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 center-block ">
+        <div class="row  ">
+          <div class="col-md-12 center-block">
+            <div class="row  ">
+              <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="contact-address">
+                  <h3 class="worktogetherheading">How much does it cost<br>
+                    to create your project</h3>
+                  <p class="btnboxhpvideo" > <a class="btnboxbluearea " href="calculator.html" >Quote Simulator</a></p>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="contact-address">
+                  <h3 class="worktogetherheading">Don’t have the $$$ for<br>
+                    Development</h3>
+                  <p class="btnboxhpvideo" > <a class="btnboxbluearea " href="contact.html" >Contact Us</a></p>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--==========================
+    Bottom Footer Section
+============================-->
+<section id="bottomfootersection" class="cd-section section-bg ">
+  <div class="container">
+    <div class="row contact-info ">
+      <div class="col-md-12 center-block">
+        <div class="pb-40">
+          <ul class="footerlinktextarea">
+            <li class="footerlinksblock" ><a href="index.html">Home</a></li>
+            <li class="footerlinksblock" ><a href="about.html">About</a></li>
+            <li class="footerlinksblock" ><a href="services.html">Services</a></li>
+            <li class="footerlinksblock" ><a href="work.html">Work</a></li>
+            <li class="footerlinksblock" ><a href="ourpackages.html">Packages</a></li>
+            <li class="footerlinksblock" ><a href="calculator.html">Calculator</a></li>
+            <li class="footerlinksblock" ><a href="contact.html">Contact</a></li>
+            <li class="footerlinksblock" ><a href="" data-toggle="modal" data-target="#needsupport">Support</a></li>
+            <li class="footerlinksblock" ><a href=""  data-toggle="modal" data-target="#joincodecuzhonors">Join + Login</a></li>
+            <li class="footerlinksblock" ><a href="privacy.html">Privacy + Terms</a></li>
+            <li class="footerlinksblock" ><a href="http://www.codefortheculture.com" target="_blank"><span class="cftc-code" >CODE</span> <span class="cftc-forthe"> for the </span> <span class="cftc-code" >CULTURE</span> </a></li>
+          </ul>
+          <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="col-lg-6 col-md-8 col-sm-12 col-md-12 center-block pt-60">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <p class="footernavtext" > <a href="mailto:infor@codecuz.com"><i class="fa fa-phone" style="font-size:14px;"></i>&nbsp;&nbsp;1 877 CODE CUZ</a></p>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <p class="footernavtext" > <a href="mailto:infor@codecuz.com"><i class="fa fa-envelope" style="font-size:14px;"></i>&nbsp;&nbsp;INFO@CODECUZ.COM</a></p>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--==========================
+    Mobile Footer Section
+============================-->
+<div>
+  <div class="mobilefooterinfoblocker">
+    <div class="pull-left mobilefooterinfoblockerinfo" >1 877 code cuz</div>
+    <div class="pull-right mobilefooterinfoblockerinfo" >info@codecuz.com</div>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer">
+    <div class="container  pb-40">
+      <div class="copyright"> &copy; 2020 Copyright <strong>CodeCuz LLC</strong>. All Rights Reserved </div>
+    </div>
+  </footer>
+</div>
+<!--==========================
+    Fixed Footer
+  ============================-->
+<div id="fixed_footer">
+  <div id="footer_bar">
+    <div id="footer_bar_content" class="container-fluid">
+      <div class="row">
+        <div id="footer_bar_trust_pilot" class="col-lg-4 col-md-5 col-sm-4 col-xs-4 dnone-600">
+          <div id="footer_bar_reviews">
+            <div id="footer_bar_review_total " class="footertextarea pt-10"> <span class="dnone-991"><i class="fa fa-phone"></i></span> <a href="">1.877.CODE.CUZ</a>&nbsp; &nbsp;
+              &nbsp;<span class="dnone-991"><i class="fa fa-envelope"></i></span> <span
+                class="dnone-768"><a href="/contact.html" data-moveto="6">INFO@CODECUZ.COM</a></span> </div>
+          </div>
+        </div>
+        <div id="footer_bar_more_info" class="col-lg-4 col-md-3 col-sm-3 col-xs-5"
+          onclick="$('#fixed_footer_more_info').animate({opacity: 'toggle', height: 'toggle'}, 750, 'easeInOutBack');$(this).toggleClass('footer_info_selected');return false;"> &nbsp;</div>
+        <div class="col-lg-4 col-md-4 col-sm-5 col-xs-5" style="float:right; line-height: 38px; font-size: 15px;">
+          <div style="float:right;"> <span class="footertextarea d-none show-767"><a href="/contact.html"
+                data-moveto="6">INFO@CODECUZ.COM</a></span> <span class="dnone-767">
+            <li style="display:inline; padding-right:10px;"><a
+                  href="https://www.facebook.com/codecuz" target="_blank"
+                  style="color:#fff;"> <i class="fa fa-facebook"></i></a></li>
+            <li style="display:inline; padding-right:10px;"><a href="https://www.twitter.com/codecuz/"
+                  target="_blank" style="color:#fff;"><i class="fa fa-twitter"></i></a></li>
+            <span class="dnone-991">
+            <li style="display:inline; padding-right:10px;"><a href="https://www.yelp.com/codecuz/"
+                    target="_blank" style="color:#fff;"><i class="fa fa-yelp"></i></a></li>
+            </span>
+            <li style="display:inline; padding-right:10px;"><a href="https://www.instagram.com/codecuz/"
+                  target="_blank" style="color:#fff;"><i class="fa fa-instagram"></i></a></li>
+            
+            <li style="display:inline; padding-right:10px;"><a href="https://www.linkedin.com/in/codecuz"
+                  target="_blank" style="color:#fff;"><i class="fa fa-linkedin"></i></a></li>
+            <li style="display:inline; padding-right:10px;"><a href="https://www.youtube.com/c/codecuz"
+                  target="_blank" style="color:#fff;"><i class="fa fa-youtube"></i></a></li>
+            </span> </div>
+        </div>
+      </div>
+      <div style="clear:both; height:0px;">&nbsp;</div>
+    </div>
+  </div>
+</div>
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a> 
+ <div class="support">
+     <a class="helpsupport" href="" data-toggle="modal" data-target="#needsupport">Need Support </a>
+  </div>
+<!-- MODALS -->
+<div class="playbtnbox">
+  <div class="modal fade " id="video1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content modalvideo">
+        <video controls preload="metadata" width="100%" height="auto" poster="img/video_thumbnail2.jpg">
+          <source src="video/FinalNew.mp4" type="video/mp4">
+          <source src="video/FinalNew.mp4" type="video/ogg">
+          <p>Please use a modern browser to view this video.</p>
+        </video>
+      </div>
+    </div>
+  </div>
+  <div class="clearfix"></div>
+</div>
+<!-- MODALS Need Support  -->
+<div class="modal fade " id="needsupport">
+  <div class="modal-dialog modal-lg ">
+    <div class="modal-content modalvideo formpackages">
+      <button type="button" class="close" data-dismiss="modal"> <span aria-hidden="true">×</span> </button>
+      <div class="col-lg-12">
+        <h1 class="forminfotitle">Need Support?</h1>
+        <p class="lead forminfor">Thank you for your interest in our business starter package. Please file out the form below and we will contact you within 24 hours. </p>
+        <form id="contact-form" method="post" action="contact-2.php" role="form">
+          <div class="messages"></div>
+          <div class="controls">
+            <div class="row">
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <label for="form_name">First Name <span class="redcolor">*</span></label>
+                  <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <label for="form_lastname">Last Name <span class="redcolor">*</span></label>
+                  <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <label for="form_email">Email <span class="redcolor">*</span></label>
+                  <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <label for="form_phone">Package</label>
+                  <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <label for="form_message">Additional Information <span class="redcolor">*</span></label>
+                  <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <input type="submit" class="btnboxhpvideobtnblackcost sendmessage messageblock" value="Send message">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <p class="text-muted"><strong>*</strong> These fields are required.</p>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- /.8 --> 
+    </div>
+  </div>
+</div>
+<!-- MODALS Join  -->
+<div class="modal fade " id="joincodecuzhonors">
+  <div class="modal-dialog modal-lg ">
+    <div class="modal-content modalvideo formpackages">
+      <button type="button" class="close" data-dismiss="modal"> <span aria-hidden="true">×</span> </button>
+      <div class="col-lg-12">
+        <h1 class="forminfotitle">Join CodeCuz Honors</h1>
+        <p class="lead forminfor">Thank you for your interest in our business starter package. Please file out the form below and we will contact you within 24 hours. </p>
+        <form id="contact-form" method="post" action="contact-2.php" role="form">
+          <div class="messages"></div>
+          <div class="controls">
+            <div class="row">
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <label for="form_name">First Name <span class="redcolor">*</span></label>
+                  <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <label for="form_lastname">Last Name <span class="redcolor">*</span></label>
+                  <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <label for="form_email">Email <span class="redcolor">*</span></label>
+                  <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <label for="form_phone">Package</label>
+                  <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <label for="form_message">Additional Information <span class="redcolor">*</span></label>
+                  <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <input type="submit" class="btnboxhpvideobtnblackcost sendmessage messageblock" value="Send message">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <p class="text-muted"><strong>*</strong> These fields are required.</p>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- /.8 --> 
+    </div>
+  </div>
+</div>
+<!-- JavaScript Libraries --> 
+<script src="js/iconify.min.js"></script> 
+<script src="lib/jquery/jquery.min.js"></script> 
+<script src="js/modernizr.js"></script> 
+<script src="lib/jquery/jquery-migrate.min.js"></script> 
+<script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script> 	
+<script src="lib/easing/easing.min.js"></script> 
+<script src="lib/superfish/hoverIntent.js"></script> 
+<script src="lib/superfish/superfish.min.js"></script> 
+<script src="lib/wow/wow.min.js"></script> 
+<script src="lib/waypoints/waypoints.min.js"></script> 
+<script src="lib/counterup/counterup.min.js"></script> 
+<script src="lib/owlcarousel/owl.carousel.min.js"></script> 
+<script src="lib/isotope/isotope.pkgd.min.js"></script> 
+<script src="lib/lightbox/js/lightbox.min.js"></script> 
+<script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script> 
+<script src="contactform/contactform.js"></script> 
+<script src="js/main.js"></script>
+</body>
+</html>

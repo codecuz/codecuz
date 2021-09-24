@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Code Cuz | Full Service Design and Development Agency</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta name="description" content="New York City Full Service Design and Software Development Agency">
+<meta name="viewport" content="width=device-width,  user-scalable=no">
+<link rel="stylesheet" href="css/reset.min.css">
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<link href="lib/animate/animate.min.css" rel="stylesheet">
+<link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+<link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+<link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<script src="js/jquery-1.9.1.min.js"></script>
+<script>
+$(function () {
+$('.modal').on('hidden.bs.modal', function () {
+$(this).find('video')[0].pause();
+});
+});
+</script>
+<script> 
+ $(document).ready(function() {
+if($(window).width() <= 767){
+document.getElementById("myPageVideo").remove();   
+}
+});
+</script>
+<script>
+ $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+</head>
+<body>
+
+<!--==========================
+    Header
+  ============================-->
+<header id="header">
+  <div class="container-fluid">
+    <div id="logo" class="logoblock "> <a href="index.html"> <img src="img/logo.png" class="img-responsive" alt="" title="" /></a> </div>
+    <nav id="nav-menu-container">
+      <ul class="nav-menu">
+        <li ><a href="index.html">Home</a></li>
+         <li ><a  href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li ><a href="work.html">Work</a></li>
+        <li><a href="ourpackages.html">Packages</a></li>
+        <li class="active"><a class="activeblue" href="calculator.html">Calculator</a></li>
+        <li><a href="contact.html">Contact </a></li>
+        <li><a href=""  data-toggle="modal" data-target="#joincodecuzhonors" class="joinbtn ">Join <span class="dnone-1200 show-767inline">CodeCuz Honors</span></a></li>
+        <li><a href="http://www.codefortheculture.com/" target="_blank" class="cftclogo" > <img src="img/cftc_logo.svg" class="img-responsive" alt="" title="" /> </a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!--==========================
+    Header Section
+  ============================-->
+<section id="home" class="pageintrobgarea cd-section bgpic-calculator_design">
+  <div class="cd-section pageCenterFront whitetext text-center">
+    <div class="pagetextheadingarea">
+      <h2 class="pagesubtitletext" >Step-By-Step Design Estimate </h2>
+      <p class="pagetextheadingtop"> <span class="hide600"> Design</span> Quote Calculator </p>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+  <video autoplay muted loop id="myPageVideo">
+    <source src="video/bg.mp4" type="video/mp4">
+  </video>
+</section>
+<!--==========================
+    Second Nav Section
+  ============================-->
+<div class="nav1 portfoliopagemenu nav-menu" >
+  <progress value="0" id="progressBar" >
+    <div class="progress-container1" > <span class="progress-bar1" ></span> </div>
+  </progress>
+  <div class="navlinksportfolio" >
+    <div class="containcostcal" > <span class="estimatedbox" > <span class="projectcosttext  "> <span class="hide600 ">Estimated </span> Project Cost:</span> <span class="totalpriceblock"><span id="totalPrice"></span></span> </span> <span class="emailestimatebox"> <a class="emailestimate"  href="#portfolio12" >Email Quote </a> </span>
+      <div class="clearfix"></div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</div>
+<!--==========================
+    Main Section
+  ============================-->
+<main id="main">
+  <section id="aboutall">
+    <div class="sectionblockarea">
+      <section  class="cd-section">
+        <div class="container">
+          <header class="section-header pagesectionheader pt-40" >
+            <h3 class="font_black">Graphic Design Quote Calculator</h3>
+            <div class="center-block">
+              <div class="text-center breadcrumblist"><a href="calculator.html" class="font_black">Price Calculator</a> / Branding</div>
+              <div class="headertext pageheadertext font_black col-md-10 center-block text-center flnone"  >Need an instant branding and graphic design pricing quote? Well, answer my quick 5 question form to get a instant online estimate.</div>
+              <div class="clearfix">&nbsp;</div>
+            </div>
+          </header>
+          <div class="clearfix">&nbsp;</div>
+        </div>
+      </section>
+      <div class="container iconblock">
+        <div id="wrap pt-0" >
+          <form action="" id="websiteform" onsubmit="return false;">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 "> 
+              
+              <!--new layout section 2 pages-->
+              <section id="cal_selectoptions3">
+                <header class="section-header pagesectionheader pt-0" >
+                  <h3 class="questioninfo">1. What do you need?</h3>
+                  <div class="center-block">
+                    <div class="clearfix">&nbsp;</div>
+                  </div>
+                </header>
+                <div>
+                  <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 center-block flnone" >
+                      <div class="row">
+                        <div class="col-lg-12 col-md-12   col-sm-12 col-xs-12 mb-20  " >
+                          <select  id="filling" class="minimal dropmenuinfo" name="filling" onchange="calculateTotal()">
+                            <option value="None">Select Graphic Design Service</option>
+                            <option value="logo" style="padding-bottom: 100px;">Logo Design ($200)</option>
+                            <option value="uxui">UX/UI Design ($200)</option>
+                            <option value="businesscard">Business Card ($200)</option>
+                            <option value="envelope">Envelope Design ($200)</option>
+                            <option value="letterhead">Letterhead Design ($200)</option>
+                            <option value="flyer">Flyer and Invitations Design ($200)</option>
+                            <option value="folder">Folder Design($200)</option>
+                            <option value="infographic">Infographic Design ($200)</option>
+                            <option value="brochure">Brochure Design ($400)</option>
+                            <option value="booklet">Booklets, Catalogs, Pamphlets Design ($400)</option>
+                            <option value="banner">Banner Design ($400)</option>
+                            <option value="packaging">Packaging Design ($400)</option>
+                            <option value="vectordesign">Vector Design ($400)</option>
+                            <option value="coverdesign">Cover Design ($400)</option>
+                            <option value="clothingdesign">Clothing Design ($400)</option>
+                            <option value="officesupplies">Office Supplies (Pens, Calendar, Stamps) ($400 </option>
+                          </select>
+                        </div>
+                        <div class="clearfix"></div>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </section>
+              
+              <!--END new layout section 2 pages--> 
+              
+              <!--new layout section 1 pages-->
+              
+              <section id="cal_radiooptions">
+                <header class="section-header pagesectionheader pt-40" >
+                  <h3 class="questioninfo">2. Do you have a design?</h3>
+                  <div class="center-block">
+                    <div class="clearfix">&nbsp;</div>
+                  </div>
+                </header>
+                <div>
+                  <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 center-block flnone" >
+                      <div class="row">
+                        <div class="col-lg-6 col-md-12   col-sm-12 col-xs-12 mb-20  " >
+                          <div class="borderblockcalprice">
+                            <input type="radio" name="selectedwebsite" class="radio-custom" id="radio-cust-1"  value="YesHaveDesign" onclick="calculateTotal()">
+                            <label for="radio-cust-1" class="radio-custom-label">Yes, I have my own design</label>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12   col-sm-12 col-xs-12 mb-20  " >
+                          <div class="borderblockcalprice">
+                            <input type="radio" name="selectedwebsite" class="radio-custom" id="radio-cust-2" value="NoHaveDesign" onclick="calculateTotal()">
+                            <label for="radio-cust-2" class="radio-custom-label">No, I don't have a design</label>
+                          </div>
+                        </div>
+                        <div class="clearfix"></div>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </section>
+              
+              <!--END new layout section 1 pages--> 
+              
+              <!--new layout section 1 pages-->
+              
+              <section id="cal_radiooptions1">
+                <header class="section-header pagesectionheader pt-40" >
+                  <h3 class="questioninfo">3. Will your design required stock images?</h3>
+                  <div class="center-block">
+                    <div class="clearfix">&nbsp;</div>
+                  </div>
+                </header>
+                <div>
+                  <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 center-block flnone" >
+                      <div class="row">
+                        <div class="col-lg-6 col-md-12   col-sm-12 col-xs-12 mb-20  " >
+                          <div class="borderblockcalprice">
+                            <input type="radio" name="selectedwebsite2" class="radio-custom" id="radio-cust-5"  value="NoNeedStock" onclick="calculateTotal()">
+                            <label for="radio-cust-5" class="radio-custom-label">No, I don't need images</label>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12   col-sm-12 col-xs-12 mb-20  " >
+                          <div class="borderblockcalprice">
+                            <input type="radio" name="selectedwebsite2" class="radio-custom" id="radio-cust-6" value="YesNeedStock1" onclick="calculateTotal()">
+                            <label for="radio-cust-6" class="radio-custom-label">Yes, 1-5 images</label>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12   col-sm-12 col-xs-12 mb-20  " >
+                          <div class="borderblockcalprice">
+                            <input type="radio" name="selectedwebsite2" class="radio-custom" id="radio-cust-7"  value="YesNeedStock2" onclick="calculateTotal()">
+                            <label for="radio-cust-7" class="radio-custom-label">Yes, 5-10 images</label>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12   col-sm-12 col-xs-12 mb-20  " >
+                          <div class="borderblockcalprice">
+                            <input type="radio" name="selectedwebsite2" class="radio-custom" id="radio-cust-8" value="YesNeedStock3" onclick="calculateTotal()">
+                            <label for="radio-cust-8" class="radio-custom-label">Yes, Unlimited </label>
+                          </div>
+                        </div>
+                        <div class="clearfix"></div>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </section>
+              
+              <!--END new layout section 1 pages--> 
+              
+              <!--new layout section 2 pages-->
+              <section id="cal_selectoptions4">
+                <header class="section-header pagesectionheader pt-40" >
+                  <h3 class="questioninfo">4. Will your design need multiple pages, if so, how many?</h3>
+                  <div class="center-block">
+                    <div class="clearfix">&nbsp;</div>
+                  </div>
+                </header>
+                <div>
+                  <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 center-block flnone" >
+                      <div class="row">
+                        <div class="col-lg-12 col-md-12   col-sm-12 col-xs-12 mb-20  " >
+                          <select  id="pagesfilling" class="minimal dropmenuinfo" name="pagesfilling" onchange="calculateTotal()">
+                            <option value="None">Select Pages </option>
+                            <option value="pagesnum24" style="padding-bottom: 100px;">N/A, My design doesn't have multiple pages</option>
+                            <option value="pagesnum46">2-4 Pages</option>
+                            <option value="pagesnum68">4-12 Pages</option>
+                            <option value="pagesnum810">12-18 Pages</option>
+                            <option value="letterhead">18-24 Pages</option>
+                            <option value="flyer">24-32 Pages</option>
+                            <option value="folder">32-40 Pages</option>
+                            <option value="infographic">More the 40 Pages</option>
+                            <option value="brochure">Brochure Design ($400)</option>
+                            <option value="booklet">Booklets, Catalogs, Pamphlets Design ($400)</option>
+                            <option value="banner">Banner Design ($400)</option>
+                            <option value="packaging">Packaging Design ($400)</option>
+                            <option value="vectordesign">Vector Design ($400)</option>
+                            <option value="coverdesign">Cover Design ($400)</option>
+                            <option value="clothingdesign">Clothing Design ($400)</option>
+                            <option value="officesupplies">Office Supplies (Pens, Calendar, Stamps) ($400 </option>
+                          </select>
+                        </div>
+                        <div class="clearfix"></div>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </section>
+              
+              <!--END new layout section 2 pages--> 
+              
+              <!--new layout section 1 pages-->
+              
+              <section id="cal_radiooptions4">
+                <header class="section-header pagesectionheader pt-40" >
+                  <h3 class="questioninfo">5. Do you need your design printed?</h3>
+                  <div class="center-block">
+                    <div class="clearfix">&nbsp;</div>
+                  </div>
+                </header>
+                <div>
+                  <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 center-block flnone" >
+                      <div class="row">
+                        <div class="col-lg-6 col-md-12   col-sm-12 col-xs-12 mb-20  " >
+                          <div class="borderblockcalprice">
+                            <input type="radio" name="selectedwebsite3" class="radio-custom" id="radio-cust-9"  value="Pages24" onclick="calculateTotal()">
+                            <label for="radio-cust-9" class="radio-custom-label">No, Printing is not required</label>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12   col-sm-12 col-xs-12 mb-20  " >
+                          <div class="borderblockcalprice">
+                            <input type="radio" name="selectedwebsite3" class="radio-custom" id="radio-cust-10" value="Pages46" onclick="calculateTotal()">
+                            <label for="radio-cust-10" class="radio-custom-label">Yes, 0-25 Copies</label>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12   col-sm-12 col-xs-12 mb-20  " >
+                          <div class="borderblockcalprice">
+                            <input type="radio" name="selectedwebsite3" class="radio-custom" id="radio-cust-11"  value="Pages68" onclick="calculateTotal()">
+                            <label for="radio-cust-11" class="radio-custom-label">Yes, 25-250 Copies</label>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12   col-sm-12 col-xs-12 mb-20  " >
+                          <div class="borderblockcalprice">
+                            <input type="radio" name="selectedwebsite3" class="radio-custom" id="radio-cust-12" value="Pages812" onclick="calculateTotal()">
+                            <label for="radio-cust-12" class="radio-custom-label">Yes, 250 - 1,000 Copies</label>
+                          </div>
+                        </div>
+                        <div class="clearfix"></div>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </section>
+              
+              <!--END new layout section 1 pages--> 
+              
+              <!--new layout section 4 pages-->
+              
+              <section id="cal_additionaltextarea">
+                <header class="section-header pagesectionheader pt-40" >
+                  <h3 class="questioninfo">Additional Information</h3>
+                  <div class="center-block">
+                    <div class="clearfix">&nbsp;</div>
+                  </div>
+                </header>
+                <div>
+                  <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 center-block flnone" >
+                      <div class="row">
+                        <div class="col-lg-12 col-md-12   col-sm-12 col-xs-12 mb-20  " >
+                          <div class="form-group" >
+                            <textarea class="form-control textareacal" name="message" rows="5" data-rule="required"
+                data-msg="Please write something for us" placeholder="Message"></textarea>
+                            <div class="validation"></div>
+                          </div>
+                        </div>
+                        <div class="clearfix"></div>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </section>
+              <section>
+                <div>
+                  <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 center-block flnone" >
+                      <div class="row">
+                        <div class="col-lg-12 col-md-12   col-sm-12 col-xs-12 mb-20  " >
+                          <div class="row">
+                            <div class="col-xl-9 col-lg-8 col-md-12   col-sm-12 col-xs-12 estimatebottombox" >
+                              <div class="estimatebottomboxarea" ><span class="hide600 ">Estimated</span> Project Cost:</div>
+                              <div class="estimatebottomboxareapricearea"><span class="totalpriceblock estimatepricenumberbottom"><span id="totalPrice1"></span></span></div>
+                              <div class="clearfix"></div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-12   col-sm-12 col-xs-12" >
+                              <div class="btnboxhpvideo emailbtnprice" >
+                                <p> <a class="btnboxhpvideobtnblack emailbtns " href="#portfolio12"  >Email Estimate</a></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="clearfix"></div>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 center-block flnone" >
+                      <div class="row">
+                        <div class="col-lg-12 col-md-12   col-sm-12 col-xs-12 mb-20  " >
+                          <p class="disclaimer"><strong class="font_black">Disclaimer: </strong>A custom project developed from scratch can cost anywhere from $3,000 to $50,000 so it can really be a challenge to nail down a specific professional cost especially if it is fully custom. Each price in our calcultor is just a estimate and is not a fixed price. The final price could be more or less than the estimate, but it should generally be within 10-15%. All prices are subject to change, and are based off of a hourly basis. Want a uniquely custom quote for your design or development? Give us a call today! </p>
+                        </div>
+                        <div class="clearfix"></div>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </section>
+              
+              <!--END new layout section 4 pages-->
+              
+              <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+          </form>
+          <section id="portfolio12">
+            <div class="pt-40">
+              <div >
+                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 center-block flnone" >
+                  <div class="sectionspecializeblock messageblocktitle messagepriceestimate" >
+                    <div class="sectionspecializeborder">
+                      <div class="sectionspecializebordertop"> <span class="sectionspecializetext">SUBMIT YOUR QUOTE</span> </div>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="row" >
+                    <div class="col-lg-12 col-md-12   col-sm-12 col-xs-12 mb-20  " >
+                      <div class="form-group " >
+                        <form action="contactform/contactform.php" method="post" role="form" class="contactForm">
+                          <div class="form-row">
+                            <div class="form-group col-md-6 col-sm-12 col-xs-12">
+                              <input type="text" name="first_name" class="form-control" id="first_name" placeholder="First Name"
+                  data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                              <div class="validation"></div>
+                            </div>
+                            <div class="form-group col-md-6 col-sm-12 col-xs-12">
+                              <input type="last_name" class="form-control" name="last_name" id="last_name" placeholder="Last Name"
+                  data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                              <div class="validation"></div>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Email Address"
+                  data-rule="email" data-msg="Please enter at least 8 chars of subject"  />
+                            <div class="validation"></div>
+                          </div>
+                          <div class="form-group">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                            <div class="validation"></div>
+                          </div>
+                          <div class="form-group">
+                            <textarea class="form-control" name="message" rows="5" data-rule="required"
+                data-msg="Please write something for us" placeholder="Project Description"></textarea>
+                            <div class="validation"></div>
+                          </div>
+                          <div class="text-center">
+                            <button type="submit" class="btnboxhpvideobtnblackcost sendmessage emailsendmessage" >Send Message</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </section>
+          <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <div class="clearfix"></div>
+  </section>
+</main>
+<!-- End or Main Body Section --> 
+<!--==========================
+      Top Footer Section
+============================-->
+<section id="topofthefootersection"  class="cd-section section-bg ">
+  <div class="container">
+    <div class="section-header pb-40">
+      <h3>Lets Work Together</h3>
+    </div>
+    <div class="row contact-info ">
+      <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 center-block ">
+        <div class="row  ">
+          <div class="col-md-12 center-block">
+            <div class="row  ">
+              <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="contact-address">
+                  <h3 class="worktogetherheading">How much does it cost<br>
+                    to create your project</h3>
+                  <p class="btnboxhpvideo" > <a class="btnboxbluearea " href="calculator.html" >Quote Simulator</a></p>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="contact-address">
+                  <h3 class="worktogetherheading">Don’t have the $$$ for<br>
+                    Development</h3>
+                  <p class="btnboxhpvideo" > <a class="btnboxbluearea " href="contact.html" >Contact Us</a></p>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--==========================
+    Bottom Footer Section
+============================-->
+<section id="bottomfootersection" class="cd-section section-bg ">
+  <div class="container">
+    <div class="row contact-info ">
+      <div class="col-md-12 center-block">
+        <div class="pb-40">
+          <ul class="footerlinktextarea">
+            <li class="footerlinksblock" ><a href="index.html">Home</a></li>
+            <li class="footerlinksblock" ><a href="about.html">About</a></li>
+            <li class="footerlinksblock" ><a href="services.html">Services</a></li>
+            <li class="footerlinksblock" ><a href="work.html">Work</a></li>
+            <li class="footerlinksblock" ><a href="ourpackages.html">Packages</a></li>
+            <li class="footerlinksblock" ><a href="calculator.html">Calculator</a></li>
+            <li class="footerlinksblock" ><a href="contact.html">Contact</a></li>
+            <li class="footerlinksblock" ><a href="" data-toggle="modal" data-target="#needsupport">Support</a></li>
+            <li class="footerlinksblock" ><a href=""  data-toggle="modal" data-target="#joincodecuzhonors">Join + Login</a></li>
+            <li class="footerlinksblock" ><a href="privacy.html">Privacy + Terms</a></li>
+            <li class="footerlinksblock" ><a href="http://www.codefortheculture.com" target="_blank"><span class="cftc-code" >CODE</span> <span class="cftc-forthe"> for the </span> <span class="cftc-code" >CULTURE</span> </a></li>
+          </ul>
+          <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="col-lg-6 col-md-8 col-sm-12 col-md-12 center-block pt-60">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <p class="footernavtext" > <a href="mailto:infor@codecuz.com"><i class="fa fa-phone" style="font-size:14px;"></i>&nbsp;&nbsp;1 877 CODE CUZ</a></p>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <p class="footernavtext" > <a href="mailto:infor@codecuz.com"><i class="fa fa-envelope" style="font-size:14px;"></i>&nbsp;&nbsp;INFO@CODECUZ.COM</a></p>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--==========================
+    Mobile Footer Section
+============================-->
+<div>
+  <div class="mobilefooterinfoblocker">
+    <div class="pull-left mobilefooterinfoblockerinfo" >1 877 code cuz</div>
+    <div class="pull-right mobilefooterinfoblockerinfo" >info@codecuz.com</div>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer">
+    <div class="container  pb-40">
+      <div class="copyright"> &copy; 2020 Copyright <strong>CodeCuz LLC</strong>. All Rights Reserved </div>
+    </div>
+  </footer>
+</div>
+<!--==========================
+    Fixed Footer
+  ============================-->
+<div id="fixed_footer">
+  <div id="footer_bar">
+    <div id="footer_bar_content" class="container-fluid">
+      <div class="row">
+        <div id="footer_bar_trust_pilot" class="col-lg-4 col-md-5 col-sm-4 col-xs-4 dnone-600">
+          <div id="footer_bar_reviews">
+            <div id="footer_bar_review_total " class="footertextarea pt-10"> <span class="dnone-991"><i class="fa fa-phone"></i></span> <a href="">1.877.CODE.CUZ</a>&nbsp; &nbsp;
+              &nbsp;<span class="dnone-991"><i class="fa fa-envelope"></i></span> <span
+                class="dnone-768"><a href="/contact.html" data-moveto="6">INFO@CODECUZ.COM</a></span> </div>
+          </div>
+        </div>
+        <div id="footer_bar_more_info" class="col-lg-4 col-md-3 col-sm-3 col-xs-5"
+          onclick="$('#fixed_footer_more_info').animate({opacity: 'toggle', height: 'toggle'}, 750, 'easeInOutBack');$(this).toggleClass('footer_info_selected');return false;"> &nbsp;</div>
+        <div class="col-lg-4 col-md-4 col-sm-5 col-xs-5" style="float:right; line-height: 38px; font-size: 15px;">
+          <div style="float:right;"> <span class="footertextarea d-none show-767"><a href="/contact.html"
+                data-moveto="6">INFO@CODECUZ.COM</a></span> <span class="dnone-767">
+            <li style="display:inline; padding-right:10px;"><a
+                  href="https://www.facebook.com/codecuz" target="_blank"
+                  style="color:#fff;"> <i class="fa fa-facebook"></i></a></li>
+            <li style="display:inline; padding-right:10px;"><a href="https://www.twitter.com/codecuz/"
+                  target="_blank" style="color:#fff;"><i class="fa fa-twitter"></i></a></li>
+            <span class="dnone-991">
+            <li style="display:inline; padding-right:10px;"><a href="https://www.yelp.com/codecuz/"
+                    target="_blank" style="color:#fff;"><i class="fa fa-yelp"></i></a></li>
+            </span>
+            <li style="display:inline; padding-right:10px;"><a href="https://www.instagram.com/codecuz/"
+                  target="_blank" style="color:#fff;"><i class="fa fa-instagram"></i></a></li>
+            
+            <li style="display:inline; padding-right:10px;"><a href="https://www.linkedin.com/in/codecuz"
+                  target="_blank" style="color:#fff;"><i class="fa fa-linkedin"></i></a></li>
+            <li style="display:inline; padding-right:10px;"><a href="https://www.youtube.com/c/codecuz"
+                  target="_blank" style="color:#fff;"><i class="fa fa-youtube"></i></a></li>
+            </span> </div>
+        </div>
+      </div>
+      <div style="clear:both; height:0px;">&nbsp;</div>
+    </div>
+  </div>
+</div>
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a> 
+ <div class="support">
+     <a class="helpsupport" href="" data-toggle="modal" data-target="#needsupport">Need Support </a>
+  </div>
+<!-- MODALS -->
+<div class="playbtnbox">
+  <div class="modal fade " id="video1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content modalvideo">
+        <video controls preload="metadata" width="100%" height="auto" poster="img/video_thumbnail2.jpg">
+          <source src="video/FinalNew.mp4" type="video/mp4">
+          <source src="video/FinalNew.mp4" type="video/ogg">
+          <p>Please use a modern browser to view this video.</p>
+        </video>
+      </div>
+    </div>
+  </div>
+  <div class="clearfix"></div>
+</div>
+<!-- MODALS Need Support  -->
+<div class="modal fade " id="needsupport">
+  <div class="modal-dialog modal-lg ">
+    <div class="modal-content modalvideo formpackages">
+      <button type="button" class="close" data-dismiss="modal"> <span aria-hidden="true">×</span> </button>
+      <div class="col-lg-12">
+        <h1 class="forminfotitle">Need Support?</h1>
+        <p class="lead forminfor">Thank you for your interest in our business starter package. Please file out the form below and we will contact you within 24 hours. </p>
+        <form id="contact-form" method="post" action="contact-2.php" role="form">
+          <div class="messages"></div>
+          <div class="controls">
+            <div class="row">
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <label for="form_name">First Name <span class="redcolor">*</span></label>
+                  <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <label for="form_lastname">Last Name <span class="redcolor">*</span></label>
+                  <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <label for="form_email">Email <span class="redcolor">*</span></label>
+                  <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <label for="form_phone">Package</label>
+                  <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <label for="form_message">Additional Information <span class="redcolor">*</span></label>
+                  <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <input type="submit" class="btnboxhpvideobtnblackcost sendmessage messageblock" value="Send message">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <p class="text-muted"><strong>*</strong> These fields are required.</p>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- /.8 --> 
+    </div>
+  </div>
+</div>
+<!-- MODALS Join  -->
+<div class="modal fade " id="joincodecuzhonors">
+  <div class="modal-dialog modal-lg ">
+    <div class="modal-content modalvideo formpackages">
+      <button type="button" class="close" data-dismiss="modal"> <span aria-hidden="true">×</span> </button>
+      <div class="col-lg-12">
+        <h1 class="forminfotitle">Join CodeCuz Honors</h1>
+        <p class="lead forminfor">Thank you for your interest in our business starter package. Please file out the form below and we will contact you within 24 hours. </p>
+        <form id="contact-form" method="post" action="contact-2.php" role="form">
+          <div class="messages"></div>
+          <div class="controls">
+            <div class="row">
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <label for="form_name">First Name <span class="redcolor">*</span></label>
+                  <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <label for="form_lastname">Last Name <span class="redcolor">*</span></label>
+                  <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <label for="form_email">Email <span class="redcolor">*</span></label>
+                  <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <label for="form_phone">Package</label>
+                  <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <label for="form_message">Additional Information <span class="redcolor">*</span></label>
+                  <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <input type="submit" class="btnboxhpvideobtnblackcost sendmessage messageblock" value="Send message">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <p class="text-muted"><strong>*</strong> These fields are required.</p>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- /.8 --> 
+    </div>
+  </div>
+</div>
+<!-- JavaScript Libraries --> 
+<script  src="js/script1.js"></script> 
+<script type="text/javascript" src="js/formcalculations.js"></script> 
+<script  src="script3.js"></script> 
+<script src="js/modernizr.js"></script> 
+<script src="lib/jquery/jquery.min.js"></script> 
+<script src="lib/jquery/jquery-migrate.min.js"></script> 
+<script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script> 
+<script src="lib/easing/easing.min.js"></script> 
+<script src="lib/superfish/hoverIntent.js"></script> 
+<script src="lib/superfish/superfish.min.js"></script> 
+<script src="lib/wow/wow.min.js"></script> 
+<script src="lib/waypoints/waypoints.min.js"></script> 
+<script src="lib/counterup/counterup.min.js"></script> 
+<script src="lib/owlcarousel/owl.carousel.min.js"></script> 
+<script src="lib/isotope/isotope.pkgd.min.js"></script> 
+<script src="lib/lightbox/js/lightbox.min.js"></script> 
+<script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script> 
+<script src="contactform/contactform.js"></script> 
+<script src="js/main.js"></script>
+</body>
+</html>

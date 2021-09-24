@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Code Cuz | Full Service Design and Development Agency</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta name="description" content="New York City Full Service Design and Software Development Agency">
+<meta name="viewport" content="width=device-width,  user-scalable=no">
+<link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+<link rel="stylesheet" href="css/reset.min.css">
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<link href="lib/animate/animate.min.css" rel="stylesheet">
+<link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+<link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+<link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<script src="js/jquery-1.9.1.min.js"></script>
+<script>
+$(function () {
+$('.modal').on('hidden.bs.modal', function () {
+$(this).find('video')[0].pause();
+});
+});
+</script>
+<script> 
+ $(document).ready(function() {
+if($(window).width() <= 767){
+document.getElementById("myPageVideo").remove();   
+}
+});
+</script>
+</head>
+<body>
+<!--==========================
+    Header
+  ============================-->
+<header id="header">
+  <div class="container-fluid">
+    <div id="logo" class="logoblock "> <a href="index.html"> <img src="img/logo.png" class="img-responsive" alt="" title="" /></a> </div>
+    <nav id="nav-menu-container">
+      <ul class="nav-menu">
+        <li ><a href="index.html">Home</a></li>
+         <li ><a  href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li ><a href="work.html">Work</a></li>
+        <li><a href="ourpackages.html">Packages</a></li>
+        <li ><a href="calculator.html">Calculator</a></li>
+         <li class="active"><a class="activeblue" href="contact.html">Contact </a></li>
+        <li><a href=""  data-toggle="modal" data-target="#joincodecuzhonors" class="joinbtn ">Join <span class="dnone-1200 show-767inline">CodeCuz Honors</span></a></li>
+        <li><a href="http://www.codefortheculture.com/" target="_blank" class="cftclogo" > <img src="img/cftc_logo.svg" class="img-responsive" alt="" title="" /> </a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!--==========================
+    Header Section
+  ============================-->
+<section id="home" class="pageintrobgarea cd-section bgpic-contact">
+  <div class="cd-section pageCenterFront whitetext text-center">
+    <div class="pagetextheadingarea">
+      <h2 class="pagesubtitletext" >Creating Lasting Impressions </h2>
+      <p class="pagetextheadingtop"> <span class="hide600">How Are You +</span> Let's Talk</p>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+  <video autoplay muted loop id="myPageVideo">
+    <source src="video/bg.mp4" type="video/mp4">
+  </video>
+</section>
+<!--==========================
+    Main Body Section
+  ============================-->
+<main id="main"> 
+  <!--==========================
+      Contact Section
+    ============================-->
+  <section id="aboutall">
+    <div class="sectionblockarea">
+      <section  class="cd-section">
+        <div class="container">
+          <header class="section-header pagesectionheader">
+            <h3 class="font_black">Contact Us</h3>
+            <div class="center-block">
+              <div class="headertext pageheadertext font_black col-md-12 center-block text-center"  >Our incredibly talented team addresses your target audience through the power of storytelling and our design-forward strategy. Interested in our creativity? Contact us.</div>
+              <div class="clearfix">&nbsp;</div>
+            </div>
+          </header>
+          <div class="container recognitiontextarea">
+            <div class="col-md-12 ">
+              <p class="mb-0">There are many reasons to contact us, but you can always get in touch with us for your next website design, print designing, maintenance and support services, any development work, feedback or can simply say Hi! If you wish for a quote please use our quote calculator, to get a custom quote on your project. Use the contact form to send us the message online, we respond to all your questions and queries within 24 hours</p>
+            </div>
+            <div class="clearfix">&nbsp;</div>
+          </div>
+          <div class="container recognitiontextarea" style="padding: 0px;">
+            <div id="contact" class="cd-section section-bg " style="padding: 0px;">
+              <div class="row contact-info ">
+                <div class="col-md-10 center-block">
+                  <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                      <div class="contact-address pbm-20"> <i class="ion-ios-telephone-outline"></i>
+                        <h3>Phone Number</h3>
+                        <p><a href="tel:555-555-5555" class="contactlinks">1.877.CODE.CUZ</a></p>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                      <div class="contact-email pbm-20"> <i class="icon ion-ios-email-outline"></i>
+                        <h3>Email Address</h3>
+                        <p><a href="mailto:info@codecuz.com" class="contactlinks">info@codecuz.com</a></p>
+                      </div>
+                    </div>
+					  
+					  <a href="calculator.html"> 
+                   <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                      <div class="contact-email pbm-20"> <i class="ionicons ion-ios-calculator-outline"></i>
+                        <h3>Project Calculator</h3>
+                        <p><a  class="contactlinks">Request A Quote</a></p>
+                      </div>
+                    </div>
+					  </a>
+					  
+					  <a href="" data-toggle="modal" data-target="#needsupport">
+					  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                      <div class="contact-email pbm-20"> <i class="ionicons ion-ios-help-outline"></i>
+                        <h3>Need Support</h3>
+                        <p><a class="contactlinks">Request A Quote</a></p>
+                      </div>
+                    </div>
+						  </a>
+                  </div>
+                  <div class="clearfix" style="height: 0px"></div>
+                </div>
+                <div class="clearfix" style="height: 0px"></div>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix">&nbsp;</div>
+        </div>
+        <div class="container iconblock">
+          <div class="sectionspecializeblock messageblocktitle" style="padding-top: 0px; padding-bottom: 40px;">
+            <div class="sectionspecializeborder">
+              <div class="sectionspecializebordertop"> <span class="sectionspecializetext">Send us a message</span> </div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+			
+			<div id="contact" class="cd-section section-bg " style="padding: 0px;">
+              <div class="row contact-info ">
+                <div class="col-md-10 center-block">
+                  <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                      <div class="contact-address pbm-20"> <i class="ion-ios-telephone-outline"></i>
+                        <h3>Phone Number</h3>
+                        <p><a href="tel:555-555-5555" class="contactlinks">1.877.CODE.CUZ</a></p>
+                      </div>
+                    </div>
+                 
+					  <a href="calculator.html"> 
+                   <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                      <div class="contact-email pbm-20"> <i class="ionicons ion-ios-calculator-outline"></i>
+                        <h3>Project Calculator</h3>
+                        <p><a  class="contactlinks">Request A Quote</a></p>
+                      </div>
+                    </div>
+					  </a>
+					  
+					
+                  </div>
+                  <div class="clearfix" style="height: 0px"></div>
+                </div>
+                <div class="clearfix" style="height: 0px"></div>
+              </div>
+				 <div class="clearfix" style="height: 0px"></div>
+            </div>
+			
+			
+			
+			<div class="sectionspecializeblock messageblocktitle" style="padding-top: 0px; padding-bottom: 40px;">
+            <div class="sectionspecializeborder">
+              <div class="sectionspecializebordertop"> <span class="sectionspecializetext">Send us a message</span> </div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+          <div >
+            <div class="container form col-md-12">
+              <div id="errormessage"></div>
+              <form action="contactform/contactform.php" method="post" role="form" class="contactForm">
+                <div class="form-row">
+                  <div class="form-group col-md-6 col-sm-12 col-xs-12">
+                    <input type="text" name="first_name" class="form-control" id="first_name" placeholder="First Name"
+                  data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validation"></div>
+                  </div>
+                  <div class="form-group col-md-6 col-sm-12 col-xs-12">
+                    <input type="last_name" class="form-control" name="last_name" id="last_name" placeholder="Last Name"
+                  data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validation"></div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Email Address"
+                  data-rule="email" data-msg="Please enter at least 8 chars of subject"  />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" data-rule="required"
+                data-msg="Please write something for us" placeholder="Project Description"></textarea>
+                  <div class="validation"></div>
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="btnboxhpvideobtnblackcost sendmessage" style="display: block; width: 100%;">Send Message</button>
+                </div>
+              </form>
+            </div>
+            <div class="clearfix" ></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+  <!-- End or Contact Section --> 
+</main>
+<!-- End or Main Body Section --> 
+<!--==========================
+      Top Footer Section
+============================-->
+<section id="topofthefootersection"  class="cd-section section-bg ">
+  <div class="container">
+    <div class="section-header pb-40">
+      <h3>Lets Work Together</h3>
+    </div>
+    <div class="row contact-info ">
+      <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 center-block ">
+        <div class="row  ">
+          <div class="col-md-12 center-block">
+            <div class="row  ">
+              <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="contact-address">
+                  <h3 class="worktogetherheading">How much does it cost<br>
+                    to create your project</h3>
+                  <p class="btnboxhpvideo" > <a class="btnboxbluearea " href="calculator.html" >Quote Simulator</a></p>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="contact-address">
+                  <h3 class="worktogetherheading">Don’t have the $$$ for<br>
+                    Development</h3>
+                  <p class="btnboxhpvideo" > <a class="btnboxbluearea " href="contact.html" >Contact Us</a></p>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--==========================
+    Bottom Footer Section
+============================-->
+<section id="bottomfootersection" class="cd-section section-bg ">
+  <div class="container">
+    <div class="row contact-info ">
+      <div class="col-md-12 center-block">
+        <div class="pb-40">
+          <ul class="footerlinktextarea">
+            <li class="footerlinksblock" ><a href="index.html">Home</a></li>
+            <li class="footerlinksblock" ><a href="about.html">About</a></li>
+            <li class="footerlinksblock" ><a href="services.html">Services</a></li>
+            <li class="footerlinksblock" ><a href="work.html">Work</a></li>
+            <li class="footerlinksblock" ><a href="ourpackages.html">Packages</a></li>
+            <li class="footerlinksblock" ><a href="calculator.html">Calculator</a></li>
+            <li class="footerlinksblock" ><a href="contact.html">Contact</a></li>
+            <li class="footerlinksblock" ><a href="" data-toggle="modal" data-target="#needsupport">Support</a></li>
+            <li class="footerlinksblock" ><a href=""  data-toggle="modal" data-target="#joincodecuzhonors">Join + Login</a></li>
+            <li class="footerlinksblock" ><a href="privacy.html">Privacy + Terms</a></li>
+            <li class="footerlinksblock" ><a href="http://www.codefortheculture.com" target="_blank"><span class="cftc-code" >CODE</span> <span class="cftc-forthe"> for the </span> <span class="cftc-code" >CULTURE</span> </a></li>
+          </ul>
+          <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="col-lg-6 col-md-8 col-sm-12 col-md-12 center-block pt-60">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <p class="footernavtext" > <a href="mailto:infor@codecuz.com"><i class="fa fa-phone" style="font-size:14px;"></i>&nbsp;&nbsp;1 877 CODE CUZ</a></p>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <p class="footernavtext" > <a href="mailto:infor@codecuz.com"><i class="fa fa-envelope" style="font-size:14px;"></i>&nbsp;&nbsp;INFO@CODECUZ.COM</a></p>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--==========================
+    Mobile Footer Section
+============================-->
+<div>
+  <div class="mobilefooterinfoblocker">
+    <div class="pull-left mobilefooterinfoblockerinfo" >1 877 code cuz</div>
+    <div class="pull-right mobilefooterinfoblockerinfo" >info@codecuz.com</div>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer">
+    <div class="container  pb-40">
+      <div class="copyright"> &copy; 2020 Copyright <strong>CodeCuz LLC</strong>. All Rights Reserved </div>
+    </div>
+  </footer>
+</div>
+<!--==========================
+    Fixed Footer
+  ============================-->
+<div id="fixed_footer">
+  <div id="footer_bar">
+    <div id="footer_bar_content" class="container-fluid">
+      <div class="row">
+        <div id="footer_bar_trust_pilot" class="col-lg-4 col-md-5 col-sm-4 col-xs-4 dnone-600">
+          <div id="footer_bar_reviews">
+            <div id="footer_bar_review_total " class="footertextarea pt-10"> <span class="dnone-991"><i class="fa fa-phone"></i></span> <a href="">1.877.CODE.CUZ</a>&nbsp; &nbsp;
+              &nbsp;<span class="dnone-991"><i class="fa fa-envelope"></i></span> <span
+                class="dnone-768"><a href="/contact.html" data-moveto="6">INFO@CODECUZ.COM</a></span> </div>
+          </div>
+        </div>
+        <div id="footer_bar_more_info" class="col-lg-4 col-md-3 col-sm-3 col-xs-5"
+          onclick="$('#fixed_footer_more_info').animate({opacity: 'toggle', height: 'toggle'}, 750, 'easeInOutBack');$(this).toggleClass('footer_info_selected');return false;"> &nbsp;</div>
+        <div class="col-lg-4 col-md-4 col-sm-5 col-xs-5" style="float:right; line-height: 38px; font-size: 15px;">
+          <div style="float:right;"> <span class="footertextarea d-none show-767"><a href="/contact.html"
+                data-moveto="6">INFO@CODECUZ.COM</a></span> <span class="dnone-767">
+            <li style="display:inline; padding-right:10px;"><a
+                  href="https://www.facebook.com/codecuz" target="_blank"
+                  style="color:#fff;"> <i class="fa fa-facebook"></i></a></li>
+            <li style="display:inline; padding-right:10px;"><a href="https://www.twitter.com/codecuz/"
+                  target="_blank" style="color:#fff;"><i class="fa fa-twitter"></i></a></li>
+            <span class="dnone-991">
+            <li style="display:inline; padding-right:10px;"><a href="https://www.yelp.com/codecuz/"
+                    target="_blank" style="color:#fff;"><i class="fa fa-yelp"></i></a></li>
+            </span>
+            <li style="display:inline; padding-right:10px;"><a href="https://www.instagram.com/codecuz/"
+                  target="_blank" style="color:#fff;"><i class="fa fa-instagram"></i></a></li>
+            
+            <li style="display:inline; padding-right:10px;"><a href="https://www.linkedin.com/in/codecuz"
+                  target="_blank" style="color:#fff;"><i class="fa fa-linkedin"></i></a></li>
+            <li style="display:inline; padding-right:10px;"><a href="https://www.youtube.com/c/codecuz"
+                  target="_blank" style="color:#fff;"><i class="fa fa-youtube"></i></a></li>
+            </span> </div>
+        </div>
+      </div>
+      <div style="clear:both; height:0px;">&nbsp;</div>
+    </div>
+  </div>
+</div>
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a> 
+ <div class="support">
+     <a class="helpsupport" href="" data-toggle="modal" data-target="#needsupport">Need Support </a>
+  </div>
+<!-- MODALS -->
+<div class="playbtnbox">
+  <div class="modal fade " id="video1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content modalvideo">
+        <video controls preload="metadata" width="100%" height="auto" poster="img/video_thumbnail2.jpg">
+          <source src="video/FinalNew.mp4" type="video/mp4">
+          <source src="video/FinalNew.mp4" type="video/ogg">
+          <p>Please use a modern browser to view this video.</p>
+        </video>
+      </div>
+    </div>
+  </div>
+  <div class="clearfix"></div>
+</div>
+<!-- MODALS Need Support  -->
+<div class="modal fade " id="needsupport">
+  <div class="modal-dialog modal-lg ">
+    <div class="modal-content modalvideo formpackages">
+      <button type="button" class="close" data-dismiss="modal"> <span aria-hidden="true">×</span> </button>
+      <div class="col-lg-12">
+        <h1 class="forminfotitle">Need Support?</h1>
+        <p class="lead forminfor">Thank you for your interest in our business starter package. Please file out the form below and we will contact you within 24 hours. </p>
+        <form id="contact-form" method="post" action="contact-2.php" role="form">
+          <div class="messages"></div>
+          <div class="controls">
+            <div class="row">
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <label for="form_name">First Name <span class="redcolor">*</span></label>
+                  <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <label for="form_lastname">Last Name <span class="redcolor">*</span></label>
+                  <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <label for="form_email">Email <span class="redcolor">*</span></label>
+                  <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <label for="form_phone">Package</label>
+                  <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <label for="form_message">Additional Information <span class="redcolor">*</span></label>
+                  <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <input type="submit" class="btnboxhpvideobtnblackcost sendmessage messageblock" value="Send message">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <p class="text-muted"><strong>*</strong> These fields are required.</p>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- /.8 --> 
+    </div>
+  </div>
+</div>
+<!-- MODALS Join  -->
+<div class="modal fade " id="joincodecuzhonors">
+  <div class="modal-dialog modal-lg ">
+    <div class="modal-content modalvideo formpackages">
+      <button type="button" class="close" data-dismiss="modal"> <span aria-hidden="true">×</span> </button>
+      <div class="col-lg-12">
+        <h1 class="forminfotitle">Join CodeCuz Honors</h1>
+        <p class="lead forminfor">Thank you for your interest in our business starter package. Please file out the form below and we will contact you within 24 hours. </p>
+        <form id="contact-form" method="post" action="contact-2.php" role="form">
+          <div class="messages"></div>
+          <div class="controls">
+            <div class="row">
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <label for="form_name">First Name <span class="redcolor">*</span></label>
+                  <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <label for="form_lastname">Last Name <span class="redcolor">*</span></label>
+                  <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <label for="form_email">Email <span class="redcolor">*</span></label>
+                  <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <label for="form_phone">Package</label>
+                  <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <label for="form_message">Additional Information <span class="redcolor">*</span></label>
+                  <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <input type="submit" class="btnboxhpvideobtnblackcost sendmessage messageblock" value="Send message">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <p class="text-muted"><strong>*</strong> These fields are required.</p>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- /.8 --> 
+    </div>
+  </div>
+</div>
+<!-- JavaScript Libraries --> 
+<script src="js/iconify.min.js"></script> 
+<script src="lib/jquery/jquery.min.js"></script> 
+<script src="js/modernizr.js"></script>
+<script src="lib/jquery/jquery-migrate.min.js"></script> 
+<script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script> 
+<script src="lib/easing/easing.min.js"></script> 
+<script src="lib/superfish/hoverIntent.js"></script> 
+<script src="lib/superfish/superfish.min.js"></script> 
+<script src="lib/wow/wow.min.js"></script> 
+<script src="lib/waypoints/waypoints.min.js"></script> 
+<script src="lib/counterup/counterup.min.js"></script> 
+<script src="lib/owlcarousel/owl.carousel.min.js"></script> 
+<script src="lib/isotope/isotope.pkgd.min.js"></script> 
+<script src="lib/lightbox/js/lightbox.min.js"></script> 
+<script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script> 
+<script src="contactform/contactform.js"></script> 
+<script src="js/main.js"></script>
+</body>
+</html>
